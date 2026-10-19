@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brettlee Sojan — AI, Data, Machine Learning &amp; Audio Systems</title>
+    <meta
+      name="description"
+      content="Portfolio of Brettlee Sojan: machine learning experiments, environmental audio intelligence, data systems, workflow automation, and creative audio technology."
+    />
+    <meta name="theme-color" content="#0B0C0D" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Brettlee Sojan — AI, Data, Machine Learning &amp; Audio Systems" />
+    <meta
+      property="og:description"
+      content="Independent builder exploring machine learning experiments, environmental audio intelligence, systems thinking, and creative audio technology."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Brettlee Sojan Portfolio" />
+
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <link rel="stylesheet" href="/src/styles/components.css" />
+    <link rel="stylesheet" href="/src/styles/modal.css" />
+  </head>
+  <body>
+    <!-- Top Fixed Header -->
+    <header class="site-header" role="banner">
+      <div class="container site-header-inner">
+        <a href="#hero" class="site-brand" aria-label="Brettlee Sojan home">
+          <span class="site-brand-name">BRETTLEE SOJAN</span>
+          <span class="site-brand-tag">[AI · DATA · AUDIO]</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop" aria-label="Primary navigation">
+          <a href="#work" class="nav-link">WORK</a>
+          <a href="#lab" class="nav-link">LAB</a>
+          <a href="#approach" class="nav-link">APPROACH</a>
+          <a href="#about" class="nav-link">ABOUT</a>
+          <a href="#contact" class="nav-link">CONTACT</a>
+          <a
+            href="https://github.com/brettleevector-art"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="nav-github-link"
+            aria-label="GitHub Profile (opens in new tab)"
+          >
+            GitHub ↗
+          </a>
+        </nav>
+
+        <!-- Mobile Navigation Toggle -->
+        <button
+          type="button"
+          class="mobile-nav-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-nav-menu"
+          aria-label="Toggle navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Mobile Dropdown Navigation Menu -->
+      <nav id="mobile-nav-menu" class="mobile-nav-menu" aria-label="Mobile navigation">
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#lab" class="nav-link">Lab</a>
+        <a href="#approach" class="nav-link">Approach</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a
+          href="https://github.com/brettleevector-art"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="nav-github-link"
+        >
+          GitHub ↗
+        </a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- --------------------------------------------------------------------
+           Hero Section
+           -------------------------------------------------------------------- -->
+      <section class="section hero-section" id="hero" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <span class="eyebrow hero-eyebrow">INDEPENDENT BUILDER / AI · DATA · AUDIO</span>
+            <h1 class="hero-headline" id="hero-title">
+              I build systems at the intersection of data, intelligence, and sound.
+            </h1>
+            <p class="hero-subhead">
+              I’m Brettlee Sojan — a mathematics-trained builder exploring machine learning, audio
+              intelligence, and workflow automation. I combine experimental thinking with practical
+              engineering and a creative approach to technology.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#work" class="btn btn-primary">Explore Selected Work</a>
+              <a
+                href="https://github.com/brettleevector-art"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-secondary"
+              >
+                GitHub Profile ↗
+              </a>
+            </div>
+
+            <div class="hero-meta-strip" aria-label="Core operational pillars">
+              <span class="hero-meta-item">MATHEMATICAL THINKING</span>
+              <span class="hero-meta-item">ML EXPERIMENTS</span>
+              <span class="hero-meta-item">AUTOMATION SYSTEMS</span>
+              <span class="hero-meta-item">AUDIO TECHNOLOGY</span>
+            </div>
+          </div>
+
+          <!-- Technical Waveform & Spectrogram Card -->
+          <div class="hero-visual-card" aria-hidden="true">
+            <div class="hero-visual-header">
+              <span class="hero-visual-title">Mel-Spectrogram Harmonic Trace</span>
+              <span class="hero-visual-status">44.1 kHz / 1-Ch</span>
+            </div>
+            <div class="hero-canvas-wrap">
+              <canvas id="hero-waveform"></canvas>
+            </div>
+            <div class="hero-visual-footer">
+              <div class="hero-stat-block">
+                <span class="hero-stat-label">FFT Window</span>
+                <span class="hero-stat-val">1024 / Hann</span>
+              </div>
+              <div class="hero-stat-block">
+                <span class="hero-stat-label">Mel Bands</span>
+                <span class="hero-stat-val">128 Bins</span>
+              </div>
+              <div class="hero-stat-block">
+                <span class="hero-stat-label">Nyquist Freq</span>
+                <span class="hero-stat-val">22.05 kHz</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --------------------------------------------------------------------
+           01 / Selected Work (Completed Projects)
+           -------------------------------------------------------------------- -->
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="container">
+          <header class="section-header">
+            <div class="section-index">
+              <span class="section-index-num">01 / SELECTED WORK</span>
+              <div class="section-index-rule"></div>
+            </div>
+            <h2 class="section-title" id="work-title">Built, tested, and documented.</h2>
+            <p class="section-subtitle">
+              Projects where the implementation, results, and limitations matter as much as the idea.
+            </p>
+          </header>
+
+          <!-- Projects Dynamic Container -->
+          <div class="projects-stack" id="projects-container">
+            <!-- Populated via JavaScript from projects.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- --------------------------------------------------------------------
+           02 / Current Lab (Work in Progress)
+           -------------------------------------------------------------------- -->
+      <section class="section" id="lab" aria-labelledby="lab-title">
+        <div class="container">
+          <header class="section-header">
+            <div class="section-index">
+              <span class="section-index-num">02 / CURRENT LAB</span>
+              <div class="section-index-rule"></div>
+            </div>
+            <h2 class="section-title" id="lab-title">Experiments in progress.</h2>
+            <p class="section-subtitle">
+              Some questions are still being worked out. These projects are presented as active
+              explorations—not finished products.
+            </p>
+          </header>
+
+          <!-- Lab Cards Grid Container -->
+          <div class="lab-grid" id="lab-container">
+            <!-- Populated via JavaScript from lab.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- --------------------------------------------------------------------
+           03 / Approach (Research Principles)
+           -------------------------------------------------------------------- -->
+      <section class="section" id="approach" aria-labelledby="approach-title">
+        <div class="container">
+          <header class="section-header">
+            <div class="section-index">
+              <span class="section-index-num">03 / APPROACH</span>
+              <div class="section-index-rule"></div>
+            </div>
+            <h2 class="section-title" id="approach-title">How I like to work.</h2>
+            <p class="section-subtitle">
+              Three operating principles connecting machine learning rigor, workflow orchestration,
+              and acoustic judgment.
+            </p>
+          </header>
+
+          <div class="principles-grid" id="principles-container">
+            <!-- Populated via JavaScript from capabilities.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- --------------------------------------------------------------------
+           04 / About & Capabilities
+           -------------------------------------------------------------------- -->
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <header class="section-header">
+            <div class="section-index">
+              <span class="section-index-num">04 / ABOUT</span>
+              <div class="section-index-rule"></div>
+            </div>
+            <h2 class="section-title" id="about-title">Analytical by training. Experimental by practice.</h2>
+            <p class="section-subtitle">
+              A background rooted in mathematics, diagnostic coaching, data engineering, and creative
+              audio technology.
+            </p>
+          </header>
+
+          <div class="about-grid">
+            <div class="about-narrative">
+              <p class="about-lead">
+                My background in mathematics shaped how I approach complexity: define the problem, look
+                for patterns, test assumptions, and work through the details.
+              </p>
+              <p class="about-body">
+                Alongside that analytical foundation, I work with Python and data tools, explore ML
+                systems through hands-on experiments, build workflow automations, and bring an
+                audio-production perspective to creative technology.
+              </p>
+              <p class="about-body">
+                Whether evaluating ResNet18 checkpoints on mel-spectrogram audio, configuring n8n event
+                pipelines with human-in-the-loop validation, or sculpting acoustic frequency responses,
+                I focus on systems that are auditable, grounded, and built with taste.
+              </p>
+              <p class="about-body">
+                I’m especially interested in the places where data systems, machine learning, and human
+                creativity meet.
+              </p>
+            </div>
+
+            <!-- Education & Experience Sidebar -->
+            <div class="about-sidebar" id="bio-panels">
+              <!-- Populated via JavaScript from experience.js -->
+            </div>
+          </div>
+
+          <!-- Grouped Capabilities Grid -->
+          <div class="capabilities-section">
+            <div class="capabilities-header">
+              <span class="eyebrow">VERIFIED CAPABILITIES</span>
+              <h3 style="font-size: 1.5rem; margin-top: 0.5rem; color: var(--text-main);">
+                Technical Skills &amp; Operating Knowledge
+              </h3>
+            </div>
+            <div class="capabilities-grid" id="capabilities-grid">
+              <!-- Populated via JavaScript from capabilities.js -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --------------------------------------------------------------------
+           05 / Contact
+           -------------------------------------------------------------------- -->
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-container">
+          <header class="section-header">
+            <div class="section-index">
+              <span class="section-index-num">05 / CONTACT</span>
+              <div class="section-index-rule"></div>
+            </div>
+            <h2 class="section-title" id="contact-title">Have a good problem to work on?</h2>
+            <p class="section-subtitle">
+              I’m interested in thoughtful work across AI, data, machine learning, automation, and audio
+              technology. For collaborations, opportunities, or a conversation about a project, get in
+              touch.
+            </p>
+          </header>
+
+          <div class="contact-channels-grid" id="contact-channels">
+            <!-- Populated via JavaScript -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ----------------------------------------------------------------------
+         Site Footer
+         ---------------------------------------------------------------------- -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="footer-name">BRETTLEE SOJAN</span>
+          <span class="footer-tagline">AI · DATA · MACHINE LEARNING · AUDIO SYSTEMS</span>
+        </div>
+
+        <div class="footer-links">
+          <span>&copy; <span id="footer-year">2026</span> Brettlee Sojan</span>
+          <span>·</span>
+          <a href="https://github.com/brettleevector-art" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/brettleevector/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <span>·</span>
+          <a href="#hero" class="footer-back-to-top" aria-label="Back to top">
+            Back to top ↑
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ----------------------------------------------------------------------
+         Case Study Slide-Out Drawer / Modal
+         ---------------------------------------------------------------------- -->
+    <div
+      id="case-study-backdrop"
+      class="drawer-backdrop"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-labelledby="case-study-title"
+    >
+      <div class="drawer-container">
+        <header class="drawer-header">
+          <div class="drawer-title-wrap">
+            <span class="drawer-eyebrow" id="case-study-eyebrow">TECHNICAL CASE STUDY</span>
+            <h3 class="drawer-title" id="case-study-title">Project Case Study</h3>
+          </div>
+          <button type="button" class="drawer-close-btn" id="case-study-close" aria-label="Close case study drawer">
+            ✕
+          </button>
+        </header>
+
+        <div class="drawer-body" id="case-study-body">
+          <!-- Populated dynamically when a project case study is opened -->
+        </div>
+
+        <footer class="drawer-footer">
+          <a
+            href="#"
+            id="case-study-repo-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+          >
+            Explore Repository ↗
+          </a>
+          <button type="button" class="btn btn-secondary" onclick="document.getElementById('case-study-close').click()">
+            Close Panel
+          </button>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Application Script Entry Point -->
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>

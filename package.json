@@ -1,0 +1,17 @@
+{
+  "name": "brettlee-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Brettlee Sojan: machine learning experiments, environmental audio intelligence, data systems, workflow automation, and creative audio technology.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "author": "Brettlee Sojan",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^8.3.4"
+  }
+}
